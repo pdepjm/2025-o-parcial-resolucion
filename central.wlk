@@ -1,4 +1,4 @@
-import caravana.Caravana
+import repartidores.Caravana
 class DetallesDeSolicitud {
   const distancia
   const peso
