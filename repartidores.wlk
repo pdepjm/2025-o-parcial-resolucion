@@ -63,3 +63,16 @@ object sinMejoras {
     method agilidad() = 45
     method pesoMaximo() = 40
 }
+
+
+class Caravana {
+  const repartidores
+  
+  method pertenece(repartidor) = repartidores.contains(repartidor)
+  
+  method costo() = repartidores.sum({ repartidor => repartidor.costo() }) + 5000
+
+  method finalizarTransporte(){
+    repartidores.forEach({repartidor => repartidor.finalizarTransporte()})
+  }
+}
